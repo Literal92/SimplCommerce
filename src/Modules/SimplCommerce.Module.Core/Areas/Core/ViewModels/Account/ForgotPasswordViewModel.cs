@@ -4,7 +4,8 @@ namespace SimplCommerce.Module.Core.Areas.Core.ViewModels.Account
 {
     public class ForgotPasswordViewModel
     {
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Display(Name ="آدرس ایمیل")]
+        [Required(ErrorMessage = "{0} مورد نیاز است.")]
         [EmailAddress]
         public string Email { get; set; }
     }
